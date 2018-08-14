@@ -14,11 +14,8 @@ class Coin:
         self.flipTimes += 1
         self.updateResults(np.random.rand(1))
 
-    def getResults(self):
-        return self.results
-
-    def getFlipTimes(self):
-        return self.flipTimes
+    def getTotalHeads(self):
+        return sum(self.results) 
 
 
 if __name__ == "__main__":
